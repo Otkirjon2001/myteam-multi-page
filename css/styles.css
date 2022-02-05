@@ -197,9 +197,7 @@ img{
   z-index: 55;
   padding-top: 140px;
   padding-bottom: 140px;
-  background-color: var(--primary-bg-color);
-}
-.container {
+  background-color: #012F34;
 }
 .features-container {
   position: relative;
@@ -258,5 +256,84 @@ img{
 .features-circle {
   position: absolute;
   bottom: -140px;
-  right: 0;
+  right: -80px;
+}
+
+/* SUCCESS-STORIES */
+.success-stories {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #004047;
+}
+.success-stories-container {
+  position: relative;
+  z-index: 50;
+}
+.success-stories-heading {
+  max-width: 930px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 56px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+.success-stories-span{
+  color: #79C8C7;
+}
+.success-stories-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.success-stories-item {
+  padding-top: 36px;
+  padding-bottom: 11px;
+  background-image: url("../imgs/icon-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: center  top;
+  text-align: center;
+}
+.success-stories-item:not(:last-child){
+  margin-right: 30px;
+}
+.success-stories-text {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.succes-stories-author {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+}
+.success-stories-work {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+.success-stories-item-img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 2px solid #C4FFFE;
+}
+.success-stories-bg-circle {
+  position: absolute;
+  bottom: -240px;
+  right: -100px;
+}
+.success-stories-bg-rect {
+  position: absolute;
+  top: -140px;
+  left: -66px;
+
 }
