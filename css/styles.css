@@ -153,6 +153,7 @@ img{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .hero-heading {
   margin: 0;
@@ -203,6 +204,7 @@ img{
   position: relative;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .features-heading {
   width: 445px;
@@ -286,11 +288,14 @@ img{
 }
 .success-stories-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .success-stories-item {
+  max-width: 350px;
+  width: 100%;
   padding-top: 36px;
   padding-bottom: 11px;
   background-image: url("../imgs/icon-quotes.svg");
@@ -374,4 +379,59 @@ img{
   left: -65px;
   width: 200px;
   height: 244px;
+}
+
+/* SITE-FOOTER */
+.site-footer{
+  position: relative;
+  z-index: 65;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #002529;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-sitenav {
+  margin-right: 126px;
+}
+.footer-sitenav .site-logo-link {
+  margin-bottom: 25px;
+}
+.address-list {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.address-item {
+  opacity: 0.6;
+}
+.social-media-list {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  margin-bottom: 51px;
+  padding: 0;
+  list-style: none;
+}
+.social-media-item:not(:last-child) {
+  margin-right: 16px;
+}
+.social-media-item-link {
+  display: flex;
+  color: #fff;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.social-media-item-link:hover{
+  color: var(--primary-font-color);
+}
+.social-media-item-link:active{
+  opacity: 0.6;
+}
+.site-source {
+  margin: 0;
+  opacity: 0.6;
 }
