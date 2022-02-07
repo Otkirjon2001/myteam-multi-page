@@ -14,12 +14,12 @@
 <body>
   <header class="site-header">
     <div class="container header-container">
-      <a class="site-logo-link" href="#">
+      <a class="site-logo-link" href="index.html">
         <img class="site-logo-img" src="imgs/site-logo.svg" width="160" height="40" alt="myteam">
       </a>
       <ul class="sitenav-list">
         <li class="sitenav-item">
-          <a class="sitenav-item-link" href="#">home</a>
+          <a class="sitenav-item-link" href="index.html">home</a>
         </li>
         <li class="sitenav-item">
           <a class="sitenav-item-link" href="about.html">about</a>
@@ -30,6 +30,7 @@
   </header>
 
   <main class="main-content">
+
     <section class="contact">
       <div class="container contact-container">
         <div class="contact-content">
@@ -51,29 +52,30 @@
           </ul>
         </div>
         <form class="contact-form" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="contact-input" type="text" name="Name" placeholder="Name">
+          <input class="contact-input" type="text" name="Name" placeholder="Name" required>
           <input class="contact-input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            name="Email Address" placeholder="Email Address">
-          <input class="contact-input" type="text" name="Company Name" placeholder="Company Name">
-          <input class="contact-input" type="text" name="Title" placeholder="Title">
+            name="Email Address" placeholder="Email Address" required>
+          <input class="contact-input" type="text" name="Company Name" placeholder="Company Name" required>
+          <input class="contact-input" type="text" name="Title" placeholder="Title" required>
           <textarea class="contact-textarea" name="Message" placeholder="Message"></textarea>
           <button class="contact-button button" type="submit">submit</button>
         </form>
-        <img class="contact-bg-circle-dark" src="imgs/reviews-bg-right.svg" alt="">
-        <img class="contact-bg-circle-dark" src="imgs/reviews-bg-left.svg" alt="">
+        <img class="contact-bg-circle-dark" src="imgs/reviews-bg-right.svg" width="200" height="200" alt="">
+        <img class="contact-bg-circle-red" src="imgs/contact-bg.svg" width="100" height="226" alt="">
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-sitenav">
-        <a class="site-logo-link" href="#">
+        <a class="site-logo-link" href="index.html">
           <img class="site-logo-img" src="imgs/site-logo.svg" width="160" height="40" alt="myteam">
         </a>
         <ul class="sitenav-list">
           <li class="sitenav-item">
-            <a class="sitenav-item-link" href="#">home</a>
+            <a class="sitenav-item-link" href="index.html">home</a>
           </li>
           <li class="sitenav-item">
             <a class="sitenav-item-link" href="about.html">about</a>

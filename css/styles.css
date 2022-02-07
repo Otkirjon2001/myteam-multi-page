@@ -632,3 +632,121 @@ img{
   top: -140px;
   left: -65px;
 }
+
+/* CONTACT */
+.contact {
+  padding-top: 47px;
+  padding-bottom: 120px;
+  background-color: #014E56;
+}
+.container {
+}
+.contact-container {
+  position: relative;
+  display: flex;
+}
+.contact-content {
+  margin-right: 30px;
+}
+.contact-heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+}
+.contact-content-text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--primary-font-color);
+}
+.contact-content-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contact-content-item {
+  display: flex;
+  align-items: center;
+}
+.contact-content-item:not(:last-child){
+  margin-bottom: 8px;
+}
+.contact-content-item-img {
+  width: 72px;
+  height: 72px;
+  margin-right: 23px;
+}
+.contact-content-item-text {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.contact-form {
+  max-width: 540px;
+  width: 100%;
+}
+.contact-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 0 14px 17px 14px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--font-color);
+  transition: border-color 0.4s ease;
+  cursor: pointer;
+}
+.contact-input:hover{
+  border-color: #79C8C7;
+
+}
+.contact-input::placeholder{
+  color: var(--font-color);
+  opacity: 0.6;
+  transition: color 0.4s ease;
+}
+.contact-input:hover::placeholder{
+  color: var(--font-color);
+}
+.contact-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0 14px 17px 14px;
+  margin-bottom: 24px;
+  resize: vertical;
+  border: 0;
+  border-bottom: 1px solid var(--font-color);
+  background-color: transparent;
+}
+.contact-textarea::placeholder{
+  letter-spacing: -0.115385px;
+  color: var(--font-color);
+  opacity: 0.6;
+}
+.contact-button {
+  cursor: pointer;
+  background-color: var(--font-color);
+  color: var(--primary-bg-color);
+}
+.contact-button:hover{
+  opacity: 0.8;
+}
+.contact-button:active{
+  opacity: 0.6;
+}
+.contact-bg-circle-dark {
+  position: absolute;
+  left: -180px;
+  top: 0;
+}
+.contact-bg-circle-red{
+  position: absolute;
+  bottom:-114px;
+  right: -73px;
+
+}
