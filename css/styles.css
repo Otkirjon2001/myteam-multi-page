@@ -639,8 +639,6 @@ img{
   padding-bottom: 120px;
   background-color: #014E56;
 }
-.container {
-}
 .contact-container {
   position: relative;
   display: flex;
@@ -710,7 +708,12 @@ img{
   opacity: 0.6;
   transition: color 0.4s ease;
 }
-.contact-input:hover::placeholder{
+.contact-input:not(:placeholder-shown){
+  border-color: var(--primary-font-color);
+  color: var(--primary-font-color);
+}
+.contact-input:valid{
+  border-color:rgb(28, 161, 28);
   color: var(--font-color);
 }
 .contact-textarea {
@@ -722,6 +725,7 @@ img{
   border: 0;
   border-bottom: 1px solid var(--font-color);
   background-color: transparent;
+  color: var(--font-color);
 }
 .contact-textarea::placeholder{
   letter-spacing: -0.115385px;
@@ -748,5 +752,4 @@ img{
   position: absolute;
   bottom:-114px;
   right: -73px;
-
 }
