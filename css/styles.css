@@ -258,7 +258,7 @@ img{
 .features-circle {
   position: absolute;
   bottom: -140px;
-  right: -80px;
+  right: -169px;
 }
 
 /* SUCCESS-STORIES */
@@ -795,6 +795,6 @@ img{
 }
 .contact-bg-circle-red{
   position: absolute;
-  bottom:-114px;
-  right: -73px;
+  bottom: -77px;
+  right: -180px;
 }
