@@ -184,11 +184,11 @@ img{
 .hero-circle-dark {
   position: absolute;
   top: 0px;
-  left: -190px;
+  left: -265px;
 }
 .hero-circle-red {
   position: absolute;
-  top: 350px;
+  bottom: -350px;
   right: 0;
 }
 
@@ -258,7 +258,7 @@ img{
 .features-circle {
   position: absolute;
   bottom: -140px;
-  right: -169px;
+  right: -265px;
 }
 
 /* SUCCESS-STORIES */
@@ -334,12 +334,12 @@ img{
 .success-stories-bg-circle {
   position: absolute;
   bottom: -240px;
-  right: -100px;
+  right: -165px;
 }
 .success-stories-bg-rect {
   position: absolute;
   top: -140px;
-  left: -66px;
+  left: -165px;
 
 }
 
@@ -376,7 +376,7 @@ img{
 }
 .get-started-bg {
   position: absolute;
-  left: -65px;
+  left: -165px;
   width: 200px;
   height: 244px;
 }
@@ -462,7 +462,7 @@ img{
 }
 .about-hero-bg {
   position: absolute;
-  right: -165px;
+  right: -265px;
   bottom: -123px;
 }
 
@@ -637,12 +637,12 @@ img{
 .directors-bg-circle {
   position: absolute;
   top: -140px;
-  left: -165px;
+  left: -265px;
 }
 .directors-bg-rect {
   position: absolute;
   bottom: -140px;
-  right: -110px;
+  right: -165px;
 }
 
 /* CLIENTS */
@@ -675,7 +675,7 @@ img{
 .clients-bg-circle {
   position: absolute;
   top: -140px;
-  left: -65px;
+  left: -165px;
 }
 
 /* CONTACT */
@@ -790,11 +790,11 @@ img{
 }
 .contact-bg-circle-dark {
   position: absolute;
-  left: -180px;
+  left: -265px;
   top: 0;
 }
 .contact-bg-circle-red{
   position: absolute;
-  bottom: -77px;
-  right: -180px;
+  bottom: -120px;
+  right: -265px;
 }
