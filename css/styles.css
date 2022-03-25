@@ -34,6 +34,7 @@ html{
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 *,*::after,*::before{
   box-sizing: border-box;
@@ -48,30 +49,39 @@ body{
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
-  background-color: var(--font-color);
   color: var(--font-color);
+  background-color: var(--font-color);
 }
 img{
   /* max-width: 100%; */
   height: auto;
   object-fit: cover;
 }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 .button {
   display: inline-block;
   padding: 11px 33px;
-  background-color: transparent;
   font-size: 18px;
   line-height: 28px;
-  color: var(--font-color);
   border: 2px solid var(--font-color);
   border-radius: 24px;
+  color: var(--font-color);
+  background-color: transparent;
   text-decoration: none;
   transition: opacity 0.4s ease, background-color 0.4s ease, color 0.4s ease;
   white-space: nowrap;
 }
 .button:hover{
-  background-color: var(--font-color);
   color: var(--primary-bg-color);
+  background-color: var(--font-color);
 }
 .button:active{
   opacity: 0.8;
@@ -79,8 +89,8 @@ img{
 
 /* CONTAINER  */
 .container{
-  width: 100%;
   max-width: 1210px;
+  width: 100%;
   padding-right: 50px;
   padding-left: 50px;
   margin-right: auto;
@@ -214,8 +224,8 @@ img{
   line-height: 48px;
 }
 .features-heading::before{
-  display: block;
   content: "";
+  display: block;
   width: 50px;
   height: 4px;
   margin-bottom: 54px;
@@ -273,10 +283,7 @@ img{
 .success-stories-heading {
   max-width: 930px;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 56px;
+  margin: 0 auto 56px auto;
   font-weight: bold;
   font-size: 48px;
   line-height: 48px;
@@ -327,8 +334,8 @@ img{
 .success-stories-item-img {
   width: 62px;
   height: 62px;
-  border-radius: 50%;
   border: 2px solid #C4FFFE;
+  border-radius: 50%;
 }
 .success-stories-bg-circle {
   position: absolute;
@@ -352,8 +359,8 @@ img{
 .get-started-container {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .get-started-heading {
   margin: 0;
@@ -363,13 +370,13 @@ img{
   color: #012F34;
 }
 .get-started-button {
-  color: #012F34;
   border-color: #012F34;
+  color: #012F34;
   background-color: transparent;
 }
 .get-started-button:hover{
-  color: #fff;
   border-color: #012F34;
+  color: #fff;
   background-color: #012F34;
 }
 .get-started-bg {
@@ -455,8 +462,8 @@ img{
   width: 100%;
 }
 .about-hero-hr {
-  background-color:var(--primary-font-color);
   margin-bottom: 40px;
+  background-color:var(--primary-font-color);
 }
 .about-hero-bg {
   position: absolute;
@@ -514,8 +521,8 @@ img{
   align-items: center;
   max-width: 350px;
   width: 100%;
-  backface-visibility: hidden;
   padding: 32px 24px 56px 24px;
+  backface-visibility: hidden;
   background-color: #012F34;
   transition: transform 0.4s ease;
 }
@@ -528,10 +535,10 @@ img{
   flex-direction: column;
   align-items: center;
   padding: 35px 48px 63px 48px;
+  background-color: #012F34;
   transform: rotateY(-180deg);
   backface-visibility: hidden;
   transition: transform 0.4s ease;
-  background-color: #012F34;
 }
 .directors-item:hover .directors-item-received{
   transform: rotateY(180deg);
@@ -549,8 +556,8 @@ img{
   width: 96px;
   height: 96px;
   margin-bottom: 16px;
-  border-radius: 50%;
   border: 2px solid #C4FFFE;
+  border-radius: 50%;
 }
 .directors-name {
   margin: 0;
@@ -568,9 +575,9 @@ img{
   left: 50%;
   width: 56px;
   height: 56px;
-  background-color:var(--primary-font-color);
-  border-radius: 50%;
   border: 0;
+  border-radius: 50%;
+  background-color:var(--primary-font-color);
   transform: translate(-50%);
   transition: background-color 0.4s ease, opacity 0.4s ease;
   cursor: pointer;
@@ -585,8 +592,8 @@ img{
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 4px;
   width: 16px;
+  height: 4px;
   background-color: #012F34;
   transform: translate(-50%);
 }
@@ -734,9 +741,9 @@ img{
   width: 100%;
   margin-bottom: 24px;
   padding: 0 14px 17px 14px;
-  background-color: transparent;
   border: 0;
   border-bottom: 1px solid var(--font-color);
+  background-color: transparent;
   transition: border-color 0.4s ease;
   cursor: pointer;
 }
@@ -761,11 +768,11 @@ img{
   min-height: 100px;
   padding: 0 14px 17px 14px;
   margin-bottom: 24px;
-  resize: vertical;
   border: 0;
   border-bottom: 1px solid var(--font-color);
-  background-color: transparent;
+  resize: vertical;
   color: var(--font-color);
+  background-color: transparent;
 }
 .contact-textarea::placeholder{
   letter-spacing: -0.115385px;
@@ -774,8 +781,8 @@ img{
 }
 .contact-button {
   cursor: pointer;
-  background-color: var(--font-color);
   color: var(--primary-bg-color);
+  background-color: var(--font-color);
 }
 .contact-button:hover{
   opacity: 0.8;
@@ -785,8 +792,8 @@ img{
 }
 .contact-bg-circle-dark {
   position: absolute;
-  left: -265px;
   top: 0;
+  left: -265px;
 }
 .contact-bg-circle-red{
   position: absolute;
