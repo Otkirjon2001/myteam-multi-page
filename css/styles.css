@@ -462,25 +462,25 @@ img{
 
 
 /* ABOUT-HERO */
-.about-hero {
+.about__hero {
   padding-top: 47px;
   padding-bottom: 120px;
 }
-.about-hero-container {
+.about-hero__container {
   align-items: start;
 }
-.about-hero-heading {
+.about-hero__heading {
   font-size: 64px;
 }
-.about-hero-content {
+.about-hero__content {
   max-width: 730px;
   width: 100%;
 }
-.about-hero-hr {
+.about-hero__hr {
   margin-bottom: 40px;
   background-color:var(--primary-font-color);
 }
-.about-hero-bg {
+.about-hero__bg {
   position: absolute;
   right: -265px;
   bottom: -123px;
@@ -492,10 +492,10 @@ img{
   padding-bottom: 140px;
   background-color: #004047;
 }
-.directors-container {
+.directors__container {
   position: relative;
 }
-.directors-heading {
+.directors__heading {
   margin-top: 0;
   margin-bottom: 64px;
   font-weight: bold;
@@ -503,7 +503,7 @@ img{
   line-height: 48px;
   text-align: center;
 }
-.directors-list {
+.directors__list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -511,22 +511,22 @@ img{
   padding: 0;
   list-style: none;
 }
-.directors-item {
+.directors__item {
   position: relative;
+  margin-right: 30px;
+  margin-bottom: 76px;
+}
+.director{
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 350px;
   width: 100%;
   height: 255px;
-  margin-right: 30px;
-  margin-bottom: 76px;
   perspective: 2000px;
-}
-.directors-item{
   padding: 0;
 }
-.directors-item-received{
+.director__about{
   position: absolute;
   top: 0;
   left: 0;
@@ -541,7 +541,7 @@ img{
   background-color: #012F34;
   transition: transform 0.4s ease;
 }
-.directors-item-back{
+.director__slogan{
   position: absolute;
   top: 0;
   left: 0;
@@ -555,7 +555,7 @@ img{
   backface-visibility: hidden;
   transition: transform 0.4s ease;
 }
-.directors-item:hover .directors-item-received{
+.director:hover .director__about{
   transform: rotateY(180deg);
 }
 /* .directors-item-received-active{
@@ -564,25 +564,25 @@ img{
 .directors-item-received-active ~ .directors-item-back{
   transform: rotateY(0deg);
 } */
-.directors-item:hover .directors-item-back{
+.director:hover .director__slogan{
   transform: rotateY(0deg);
 }
 .directors-item-back-active{
 }
-.directors-item-img {
+.director__img {
   width: 96px;
   height: 96px;
   margin-bottom: 16px;
   border: 2px solid #C4FFFE;
   border-radius: 50%;
 }
-.directors-name {
+.director__name {
   margin: 0;
   font-size: 18px;
   line-height: 28px;
   color: #79C8C7;
 }
-.company-position {
+.director__position {
   margin: 0;
   font-weight: 500;
 }
@@ -605,7 +605,7 @@ img{
 .circle-box:active{
   opacity: 0.6;
 }
-.circle-plus {
+.circle-box__plus {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -614,52 +614,56 @@ img{
   background-color: #012F34;
   transform: translate(-50%);
 }
-.circle-plus:nth-child(2){
+.circle-box__plus:nth-child(2){
   transform: translate(-50%) rotate(90deg);
 }
-.circle-box-last{
+.circle-box--last{
   background-color:#79C8C7;
 }
-.circle-box-last:hover{
+.circle-box--last:hover{
   background-color:var(--primary-font-color);
 }
-.circle-box-last .circle-plus{
+.circle-box--last .circle-box__plus{
   transform: translate(-50%) rotate(45deg);
 }
-.circle-box-last .circle-plus:nth-child(2){
+.circle-box--last .circle-box__plus:nth-child(2){
   transform: translate(-50%) rotate(-45deg);
 }
-.directors-item-text {
+.director__slogan-text {
   margin-top: 8px;
   margin-bottom: 24px;
   text-align: center;
 }
-.directors-social-list {
+.director-contact {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.directors-social-item:not(:last-child){
+.director-contact__item:not(:last-child){
   margin-right: 16px;
 }
-.directors-social-item-link {
+.director-contact__link {
   display: flex;
   color: #fff;
   transition: color 0.4s ease, opacity 0.4s ease;
 }
-.directors-social-item-link:hover{
+.director-contact__link:hover{
   color: var(--primary-font-color);
 }
-.directors-social-item-link:active{
+.director-contact__link:active{
   opacity: 0.6;
 }
-.directors-bg-circle {
+.director-contact__img{
+  width: 24px;
+  height: 24px;
+}
+.directors__bg-circle {
   position: absolute;
   top: -140px;
   left: -265px;
 }
-.directors-bg-rect {
+.directors__bg-rect {
   position: absolute;
   bottom: -140px;
   right: -165px;
@@ -671,10 +675,10 @@ img{
   padding-bottom: 140px;
   background-color: #012F34;
 }
-.clients-container {
+.clients__container {
   position: relative;
 }
-.clients-heading {
+.clients__heading {
   margin-top: 0;
   margin-bottom: 65px;
   font-weight: bold;
@@ -682,17 +686,17 @@ img{
   line-height: 48px;
   text-align: center;
 }
-.clients-list {
+.clients__list {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 80px;
 }
-.clients-bg-circle {
+.clients__bg-circle {
   position: absolute;
   top: -140px;
   left: -165px;
@@ -704,21 +708,22 @@ img{
   padding-bottom: 120px;
   background-color: #014E56;
 }
-.contact-container {
+.contact__container {
   position: relative;
   display: flex;
 }
-.contact-content {
+.contact__content {
+  flex-grow: 1;
   margin-right: 30px;
 }
-.contact-heading {
+.contact__heading {
   margin-top: 0;
   margin-bottom: 16px;
   font-weight: bold;
   font-size: 64px;
   line-height: 100px;
 }
-.contact-content-text {
+.contact__text {
   margin-top: 0;
   margin-bottom: 32px;
   font-weight: bold;
@@ -726,34 +731,34 @@ img{
   line-height: 48px;
   color: var(--primary-font-color);
 }
-.contact-content-list {
+.about-us {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.contact-content-item {
+.about-us__item {
   display: flex;
   align-items: center;
 }
-.contact-content-item:not(:last-child){
+.about-us__item:not(:last-child){
   margin-bottom: 8px;
 }
-.contact-content-item-img {
+.about-us__img {
   width: 72px;
   height: 72px;
   margin-right: 23px;
 }
-.contact-content-item-text {
+.about-us__text {
   margin: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
 }
-.contact-form {
+.contact__form {
   max-width: 540px;
   width: 100%;
 }
-.contact-input {
+.contact__input {
   display: block;
   width: 100%;
   margin-bottom: 24px;
@@ -764,23 +769,23 @@ img{
   transition: border-color 0.4s ease;
   cursor: pointer;
 }
-.contact-input:hover{
+.contact__input:hover{
   border-color: #79C8C7;
 }
-.contact-input::placeholder{
+.contact__input::placeholder{
   color: var(--font-color);
   opacity: 0.6;
   transition: color 0.4s ease;
 }
-.contact-input:not(:placeholder-shown){
+.contact__input:not(:placeholder-shown){
   border-color: var(--primary-font-color);
   color: var(--primary-font-color);
 }
-.contact-input:valid{
+.contact__input:valid{
   border-color:rgb(28, 161, 28);
   color: var(--font-color);
 }
-.contact-textarea {
+.contact__textarea {
   width: 100%;
   min-height: 100px;
   padding: 0 14px 17px 14px;
@@ -791,28 +796,28 @@ img{
   color: var(--font-color);
   background-color: transparent;
 }
-.contact-textarea::placeholder{
+.contact__textarea::placeholder{
   letter-spacing: -0.115385px;
   color: var(--font-color);
   opacity: 0.6;
 }
-.contact-button {
+.contact__button {
   cursor: pointer;
   color: var(--primary-bg-color);
   background-color: var(--font-color);
 }
-.contact-button:hover{
+.contact__button:hover{
   opacity: 0.8;
 }
-.contact-button:active{
+.contact__button:active{
   opacity: 0.6;
 }
-.contact-bg-circle-dark {
+.contact__bg-circle-dark {
   position: absolute;
   top: 0;
   left: -265px;
 }
-.contact-bg-circle-red{
+.contact__bg-circle-red{
   position: absolute;
   bottom: -120px;
   right: -265px;
